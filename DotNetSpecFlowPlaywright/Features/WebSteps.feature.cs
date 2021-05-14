@@ -106,10 +106,10 @@ this.ScenarioInitialize(scenarioInfo);
  testRunner.Given("i navigate to \"https://www.bbc.co.uk/news\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
 #line 6
- testRunner.When("i click news menu \"Scotland\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.When("i click menu \"Scotland\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 7
- testRunner.And("i click news menu \"Edinburgh, Fife & East\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And("i click menu \"Edinburgh, Fife & East\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 8
  testRunner.Then("i see stories for \"Edinburgh, Fife & East Scotland\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
@@ -151,10 +151,10 @@ this.ScenarioInitialize(scenarioInfo);
  testRunner.Given("i navigate to \"https://www.bbc.co.uk/sport\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
 #line 13
- testRunner.When("i click \"Formula 1\" from the menu", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.When("i click menu \"Formula 1\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 14
- testRunner.When("i click \"Standings\" from the submenu", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.When("i click menu \"Standings\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 15
  testRunner.Then("i see current formula 1 driver table", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
@@ -288,12 +288,18 @@ this.ScenarioInitialize(scenarioInfo);
  testRunner.Given("i navigate to \"https://www.bbc.co.uk/iplayer\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
 #line 34
- testRunner.When("i click tv guide", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.When("i click menu \"TV Guide\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 35
- testRunner.And("i click channel \"bbc two\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.When("i click menu \"bbc two\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 36
+ testRunner.When("i click tv guide", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 37
+ testRunner.And("i click channel \"bbc two\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 38
  testRunner.Then("i see todays Tv Guide", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }

@@ -6,7 +6,7 @@
         {
             CHROME,
             FIREFOX,
-            EDGE
+            WEBKIT
 
         }
     }
