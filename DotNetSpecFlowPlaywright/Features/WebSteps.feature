@@ -32,7 +32,5 @@ Scenario: XFail Check My Local Weather
 Scenario: Check The Tv Guide
 	Given i navigate to "https://www.bbc.co.uk/iplayer"
 	When i click menu "TV Guide"
-	When i click menu "bbc two"
-	When i click tv guide
 	And i click channel "bbc two"
 	Then i see todays Tv Guide
