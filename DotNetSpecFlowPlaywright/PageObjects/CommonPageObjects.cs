@@ -1,4 +1,5 @@
-﻿using PlaywrightSharp;
+﻿
+using Microsoft.Playwright;
 using System.Threading.Tasks;
 
 namespace DotNetSpecFlowPlaywright.PageObjects
@@ -15,7 +16,7 @@ namespace DotNetSpecFlowPlaywright.PageObjects
 
         public async Task GivenINavigateTo(string p0)
         {
-            await _page.GoToAsync(p0);
+            await _page.GotoAsync(p0);
         }
 
 

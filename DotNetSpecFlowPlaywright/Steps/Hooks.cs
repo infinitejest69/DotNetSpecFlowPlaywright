@@ -1,7 +1,7 @@
 ﻿using BoDi;
+using Microsoft.Playwright;
 using NUnit.Framework;
-using PlaywrightSharp;
-using PlaywrightSharp.Chromium;
+
 using System.Threading.Tasks;
 using TechTalk.SpecFlow;
 
@@ -12,8 +12,8 @@ namespace DotNetSpecFlowPlaywright.Steps
     [Binding]
     internal class Hooks
     {
-        public IChromiumBrowser browser;
-        public IChromiumBrowserContext context;
+        public IBrowser browser;
+        public IBrowserContext context;
         public IPage page;
         public IPlaywright playwright;
         private readonly IObjectContainer _objectContainer;
@@ -23,12 +23,6 @@ namespace DotNetSpecFlowPlaywright.Steps
         {
             _objectContainer = objectContainer;
             _scenarioContext = scenarioContext;
-        }
-
-        [BeforeTestRun]
-        public static async Task BeforeFeature()
-        {
-            await Playwright.InstallAsync();
         }
 
         [AfterScenario()]
@@ -46,9 +40,10 @@ namespace DotNetSpecFlowPlaywright.Steps
         {
             playwright = await Playwright.CreateAsync();
             browser = await playwright.Chromium.LaunchAsync(
-                headless: false
+                
             );
-            context = await browser.NewContextAsync();
+            context = await browser.NewContextAsync(
+                );
             page = await context.NewPageAsync();
             _objectContainer.RegisterInstanceAs(page);
         }
