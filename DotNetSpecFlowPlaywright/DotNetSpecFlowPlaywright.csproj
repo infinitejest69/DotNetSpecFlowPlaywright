@@ -14,7 +14,7 @@
     <PackageReference Include="ExtentReports" Version="4.1.0" />
     <PackageReference Include="Microsoft.Extensions.Configuration" Version="5.0.0" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.10.0" />
-    <PackageReference Include="PlaywrightSharp" Version="0.192.0" />
+    <PackageReference Include="Microsoft.Playwright" Version="1.12.2" />
 
     
 
