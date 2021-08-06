@@ -106,13 +106,13 @@ this.ScenarioInitialize(scenarioInfo);
  testRunner.Given("i navigate to \"https://www.bbc.co.uk/weather\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
 #line 6
- testRunner.When("i input the location \"Dunfermline\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.When("i input the location \"Glasgow, Glasgow City\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 7
  testRunner.And("click search", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 8
- testRunner.Then("i see current weather for \"Dunfermline\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.Then("i see current weather for \"Glasgow, Glasgow City\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();
@@ -153,7 +153,7 @@ this.ScenarioInitialize(scenarioInfo);
  testRunner.Given("i navigate to \"https://www.bbc.co.uk/weather\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
 #line 13
- testRunner.When("i input the location \"Dunfermline\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.When("i input the location \"Glasgow, Glasgow City\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 14
  testRunner.And("click search", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");

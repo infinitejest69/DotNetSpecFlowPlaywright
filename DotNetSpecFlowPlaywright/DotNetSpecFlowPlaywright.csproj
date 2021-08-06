@@ -38,12 +38,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Update="Features\Sport.feature.cs">
-      <DependentUpon>Sport.feature</DependentUpon>
-    </Compile>
-  </ItemGroup>
-
-  <ItemGroup>
     <SpecFlowFeatureFiles Update="Features\Sport.feature">
       <Visible>$(UsingMicrosoftNETSdk)</Visible>
       <CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>

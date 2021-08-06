@@ -39,11 +39,9 @@ namespace DotNetSpecFlowPlaywright.Steps
         public async Task createBrowser()
         {
             playwright = await Playwright.CreateAsync();
-            browser = await playwright.Chromium.LaunchAsync(
-                
-            );
-            context = await browser.NewContextAsync(
-                );
+            BrowserTypeLaunchOptions typeLaunchOptions = new BrowserTypeLaunchOptions{ Headless = false };
+            browser = await playwright.Chromium.LaunchAsync(typeLaunchOptions);
+            context = await browser.NewContextAsync();
             page = await context.NewPageAsync();
             _objectContainer.RegisterInstanceAs(page);
         }

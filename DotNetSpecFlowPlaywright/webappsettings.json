@@ -1,6 +1,0 @@
-{
-  "PlaywrightDocker": "http://localhost:4444/wd/hub",
-  "Environment": "Local",
-  "Browser": "Chrome",
-  "ImplicitWait": 10
-}
